@@ -4,4 +4,7 @@ import { nodePolyfills } from "vite-plugin-node-polyfills"
 
 export default defineConfig({
   plugins: [svelte({ emitCss: false }), nodePolyfills()],
+  build: {
+    target: 'esnext'
+  }
 })
