@@ -6,7 +6,7 @@ declare global {
   }
 }
 
-const layer = await createHTTPClient("https://omni-api.initiation-1.initia.xyz").get("/v1/registry/chains/layer1")
+const layer = await createHTTPClient("https://omni-api.initiation-1.initia.xyz").get("/v1/registry/chains/init-ai-1")
 const widget = window?.createWalletWidget({ layer })
 
 export default widget
